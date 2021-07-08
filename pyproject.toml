@@ -9,7 +9,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Flask = "1.1.2"  # flaskの最新は2.0だが、依存ライブラリのWerkzeugとzappa(awsツール)のバージョンが異なるので1.1.2までしか利用できない
+Flask = "1.1.4"  # flaskの最新は2.0だが、依存ライブラリのWerkzeugとzappa(awsツール)のバージョンが異なるので1.1.4までしか利用できない
 pynamodb = "^5.1.0"
 flask-login = "^0.5.0"
 flask-sessionstore = "^0.4.5"
