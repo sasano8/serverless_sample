@@ -1,0 +1,38 @@
+{
+  "production": {
+    "app_function": "server.app",
+    "aws_region": "ap-northeast-1",
+    "profile_name": "serverless_sample",
+    "project_name": "serverless-sample",
+    "runtime": "python3.8",
+    "s3_bucket": "zappa-q2dlb98yi",
+    "environment_variables": {
+      "SERVERLESS_BLOG_CONFIG": "production",
+      "SERVERLESS_USER_NAME": "アプリケーションのユーザー名",
+      "SERVERLESS_USER_PW": "アプリケーションのパスワード",
+      "SERVERLESS_SECRET_KEY": "アプリケーションのシークレット",
+      "IAM_DYNAMODB_SAMPLE_ACCESS_KEY": "Dynamodbのaccess_key",
+      "IAM_DYNAMODB_SAMPLE_SECRET_KEY": "Dynamodbのsecret_key"
+    },
+    "slim_handler": true,
+    "exclude": [
+      "setuptools",
+      // "botocore",
+      // "docs",
+      "precommit",
+      "virtualenv",
+      "mypy",
+      "isort",
+      "flake8",
+      "black",
+      "pytest",
+      "tests",
+      "_pytest",
+      ".pytest_cache",
+      ".mypy_cache",
+      "sphinx",
+      "sphinx_rtd_theme",
+      "markupsafe"
+    ]
+  }
+}
