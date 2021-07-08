@@ -1,50 +1,27 @@
-# openapi_client_generator
-openapiからクライアント／サーバコードを生成します。
-このツールは次のコンバータを統合したものです。
+# serverless_sample
+AWSのlambdaとapigatewayを使ったWebアプリケーションのサンプルです。
 
-- openapi to code: [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
-- openapi to code: [OpenAPI Generator Online](http://api.openapi-generator.tech)
-- json to jsonschema: [genson](https://github.com/wolverdude/genson/)
-- jsonschema to pydantic: [datamodel-code-generator](https://github.com/koxudaxi/datamodel-code-generator)
-- pydantic to sqlalchemy: 自作
+# Serverlessとは
+Serverlessとは、できるだけサーバの存在を意識せずにアプリケーションを構成するためのノウハウ。
+ここではPythonアプリケーションに対するServerlessの話を中心とする。
 
+# ツール集
 
-# Requirement
+## Serverless Frameworkとは
+Node.js製のツール。各種クラウド（多分）へのサーバレスなアプリケーションビルドを支援する。
+Pythonなど各種言語をサポートしている。
 
-- Python 3.8+
+## zappa
+Python版のServerless Framework。AWS限定。
+flaskなどをwsgiアプリケーションをビルドできる（サーバレスは基本関数単位で使うが、Webアプリケーションも対応できる。zappaがつなぐ役割をしている）。
+asgiは未対応。Mangumをプラグインすると対応できるようだが茨の道っぽい。
 
-# Installation
+## boto
+AWS SDK for Python。AWSにコンソール上から構成変更できるようになる。
+デプロイ時はこのパッケージを含めておく必要があるようで、ないとアプリケーションと通信できない。
 
-``` shell
-```
-
-# Getting started
-
-## 生成可能なクライアントを取得する
-``` shell
-python3 -m openapi_client_generator client-list
-```
-
-## クライアントを生成する
-
-指定したopenapiの仕様書からクライアントを生成し、指定したディレクトリに出力します。
-インプットにするopenapiはURL(`spec-url`)またはLOCALPATH(`spec-file`)で指定可能です。
-
-``` shell
-python3 -m openapi_client_generator client-generate --override \
-     --spec-url=https://raw.githubusercontent.com/OpenAPITools/openapi-generator/master/modules/openapi-generator/src/test/resources/2_0/petstore.yaml \
-     --client-type=typescript-axios \
-     your_output_dir
-```
-
-``` shell
-python3 -m openapi_client_generator client-generate --override \
-     --spec-file=petstore.yaml \
-     --client-type=typescript-axios \
-     your_output_dir
-```
-
-# Setup
+## troposphere
+AWSの構成ファイルを検証するためのツールのようです。
 
 
 # 開発ガイド
