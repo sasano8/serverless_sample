@@ -69,6 +69,13 @@ python -m serverless_sample run
 - user: john
 - pass: due123
 
+## データベース削除
+
+データベースが不要になったら次のコマンドでデータベースを削除できる。
+
+``` shell
+python -m serverless_sample db remove
+```
 
 # 本番環境へデプロイするには
 
