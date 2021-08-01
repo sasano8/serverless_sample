@@ -14,7 +14,7 @@ pynamodb = "^5.1.0"
 flask-login = "^0.5.0"
 flask-sessionstore = "^0.4.5"
 pydantic = "^1.8.2"
-python-dotenv = "^0.18.0"
+python-dotenv = "^0.19.0"
 
 
 [tool.poetry.dev-dependencies]
