@@ -859,17 +859,17 @@ telegram = ["requests"]
 
 [[package]]
 name = "troposphere"
-version = "2.7.0"
+version = "3.0.2"
 description = "AWS CloudFormation creation library"
 category = "dev"
 optional = false
-python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+python-versions = ">=3.6.2"
 
 [package.dependencies]
-cfn_flip = ">=1.0.2"
+cfn-flip = ">=1.0.2"
 
 [package.extras]
-policy = ["awacs (>=0.8)"]
+policy = ["awacs (>=2.0.0)"]
 
 [[package]]
 name = "typed-ast"
@@ -987,7 +987,7 @@ wsgi-request-logger = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "b0146aec6d6977b0fcce25f01e23b5db275bffe1cc7ce3231e7de7dc1a8b5ad8"
+content-hash = "9b17d3e357ca54b0722a6fa58820f4ac578bca86f079a89d4f751151ca4f8802"
 
 [metadata.files]
 alabaster = [
@@ -1432,7 +1432,8 @@ tqdm = [
     {file = "tqdm-4.61.2.tar.gz", hash = "sha256:8bb94db0d4468fea27d004a0f1d1c02da3cdedc00fe491c0de986b76a04d6b0a"},
 ]
 troposphere = [
-    {file = "troposphere-2.7.0.tar.gz", hash = "sha256:b0ab144b989e1e1c4698e601008bd5f7fbabd0629b4588cb57d3583f8aa6edc9"},
+    {file = "troposphere-3.0.2-py3-none-any.whl", hash = "sha256:a8492656bcf917b45b253dc3623cb9c81e45e5c7aaa524647650547d505016e1"},
+    {file = "troposphere-3.0.2.tar.gz", hash = "sha256:acde51e47294bdb2bce4f0be4320ac12dbd3c6a2783895779ddb94cfdc0badaf"},
 ]
 typed-ast = [
     {file = "typed_ast-1.4.3-cp35-cp35m-manylinux1_i686.whl", hash = "sha256:2068531575a125b87a41802130fa7e29f26c09a2833fea68d9a40cf33902eba6"},
