@@ -32,7 +32,7 @@ typer = "^0.3.2"
 click = "7.1.2"
 markupsafe = "^2.0.1"
 zappa = "^0.53.0"
-troposphere = "2.7.0"  # 最新だとzappaが対応しておらずビルド時にエラーが生じる
+troposphere = "3.1.1"  # 最新だとzappaが対応しておらずビルド時にエラーが生じる
 
 
 [build-system]
